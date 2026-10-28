@@ -11,10 +11,6 @@ login_response_data = login_response.json()
 print('Login response:', login_response_data)
 print('Status Code:', login_response.status_code)
 
-authorization_payload = {
-    'Authorization': f'Bearer {login_response_data["token"]["accessToken"]}'
-}
-
 headers = {
     'Authorization': f'Bearer {login_response_data["token"]["accessToken"]}'
 }
